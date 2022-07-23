@@ -149,3 +149,7 @@ h1 {
     box-shadow: 0 0 10px #719ECE;
     cursor: pointer;
 }
+
+input[type='radio']:checked:before {
+    background:green;
+  }
