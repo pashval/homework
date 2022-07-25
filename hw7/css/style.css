@@ -1,0 +1,30 @@
+html {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#body {
+    width: 793px;
+    height: 507px;
+    background: #3B3F45;
+}
+
+#head {
+background: #4A4F56;
+font-family: 'Roboto';
+color: #FF8984;
+text-align: center;
+height: 82px;
+}
+
+.h1 {
+    padding: 50px;
+    font-size: 24px;
+}
+
+p {
+    padding-top: 0px;
+    font-size: 16px;
+
+}
