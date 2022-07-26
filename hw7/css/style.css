@@ -4,27 +4,47 @@ html {
     display: flex;
 }
 
-#body {
+.body {
+    margin-top: 45px;
     width: 793px;
     height: 507px;
     background: #3B3F45;
 }
 
-#head {
-background: #4A4F56;
-font-family: 'Roboto';
-color: #FF8984;
-text-align: center;
-height: 82px;
+.head {
+    background: #4A4F56;
+    font-family: 'Roboto';
+    color: #FF8984;
+    text-align: center;
+    height: 82px;
 }
 
 .h1 {
-    padding: 50px;
+    padding-top: 12px;
+    margin-bottom: 0px;
     font-size: 24px;
 }
 
 p {
-    padding-top: 0px;
+    margin-top: -10px;
     font-size: 16px;
+}
 
+button {
+    width: 534px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 335px auto 45px auto;
+    fill: solid;
+    background: #4A4F56;
+    border: none;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF8984;
 }
