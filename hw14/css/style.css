@@ -164,31 +164,45 @@
     clip-path: circle(70% at 50% 50%);
 }
 
-.social {
-    display: flex;
+.med {
     justify-content: center;
     align-items: center;
     margin-left: -15px;
 }
 
-.media {
-    display: inline-block;
-    margin-top: 15px;
-    margin-right: 10px;
-    position: relative;
+.social {
+    max-width: 250px;
+    width: 100%;
 }
 
-.second .imag:nth-of-type(2){
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0;
-        transition: opacity .2s linear;
-      }
+.social__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+}
 
-.second .imag:nth-of-type(2):hover{
-        opacity: 1;
+.social__link {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #18b5dc;
+    text-decoration: none;
+    color: #18b5dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background-color: white;
+    
+}
+
+.social__link:last-child {
+    margin-right: 0;
+}
+
+.social__link:hover {
+    background-color: #18b5dc;
+    color: white;
 }
 
 .job {
