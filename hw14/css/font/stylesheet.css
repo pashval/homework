@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Train One';
+    src: url('TrainOne-Regular.eot');
+    src: local('Train One Regular'), local('TrainOne-Regular'),
+        url('TrainOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TrainOne-Regular.woff2') format('woff2'),
+        url('TrainOne-Regular.woff') format('woff'),
+        url('TrainOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
