@@ -1,10 +1,12 @@
+*{transition: all .1s ease-in;}
+
 html {
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-.body {
+.list__body {
     margin-top: 45px;
     width: 793px;
     height: 507px;
@@ -30,13 +32,93 @@ p {
     font-size: 16px;
 }
 
+.list-option {
+    width: 102px;
+    height: 130px;
+}
+
+.list-option_opt{
+    margin: 20px 130px 45px 130px;
+        
+}
+
+label {
+    margin-left: 16px;
+}
+
+input {
+    margin-left: 12px;
+    width: 19px;
+    height: 19px;
+}
+
+input[type='checkbox'] {
+    accent-color: white;
+}
+
+.list-option_elem label  {
+    width: 534px;
+    height: 45px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.list-option_elem  {
+    width: 534px;
+    height: 45px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.list-option_elem:nth-child(odd) {
+    background-color: #88839E;
+}
+
+.list-option_elem:nth-child(even) {
+    background-color: #7A7593;
+}
+
+.list-option_elem:hover {
+    background-color: #625E77;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.list-option_elem:active {
+    background-color: orange;
+}
+
+input[type=checkbox]:checked + label {
+    text-decoration:line-through;
+}
+
+span {
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+span::before {
+    content: "(";
+}
+
+span::after {
+    content: ")";
+}
+
 button {
     width: 534px;
     height: 45px;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 335px auto 45px auto;
+    margin: 170px auto 45px auto;
     fill: solid;
     background: #4A4F56;
     border: none;
@@ -47,4 +129,10 @@ button {
     letter-spacing: 0em;
     text-align: left;
     color: #FF8984;
+}
+
+button:active {
+    background-color: #ffe0b3;
+    font-size: 25px;
+    color: black;
 }

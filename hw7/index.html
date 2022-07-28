@@ -5,23 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" type="text/css"  href="css/roboto.css" >
+        <link rel="icon" type="image/x-icon" href="/hw7/img/favicon.png">
     </head>
     <body>
-        <div class="body">
-            <div class="head">
-                <h1 class="h1">CSS Dinner Shopping List<h1>
-                <p>Let's go to the mall!</p>
-            </div>
-            <div class="options">
-                <div class="option_1"></div>
-                <div class="option_2"></div>
-                <div class="option_3"></div>
-                <div class="option_4"></div>
-                <div class="option_5"></div>
-                <div class="option_6"></div>
-            </div>
-            <div class="button">
-                <button type="button">Bon appetit :)</button>
+        <div  class="list">
+            <div class="list__body">
+                <header>
+                    <div class="head">
+                        <h1 class="h1">CSS Dinner Shopping List<h1>
+                        <p>Let's go to the mall!</p>
+                    </div>
+                </header>
+                <form>
+                    <div class="list-option list-option_opt">
+                        <div class="list-option_elem">
+                            <input type="checkbox" id="elem1" name="elem1" value="Pickles">
+                            <label for="elem1">A lot of pickles <span> for the next lessons about CSS</span></label>
+                        </div>
+                        <div class="list-option_elem">
+                            <input type="checkbox" id="elem2" name="elem2" value="Apples">
+                            <label for="elem2">10 apples <span>for more CSS manipulations</span></label>
+                        </div>
+                        <div class="list-option_elem">
+                            <input type="checkbox" id="elem3" name="elem3" value="Oranges">
+                            <label for="elem3">20 oranges <span>because they are awesome</span></label>
+                        </div>
+                        <div class="list-option_elem">
+                            <input type="checkbox" id="elem4" name="elem4" value="Plates">
+                            <label for="elem4">13 plates <span>hm... they always dissapear</span></label>
+                        </div>
+                        <div class="list-option_elem">
+                            <input type="checkbox" id="elem5" name="elem5" value="Bentos">
+                            <label for="elem5">15 bentos</label>
+                        </div>
+                        <div class="list-option_elem">
+                            <input type="checkbox" id="elem6" name="elem6" value="Sake">
+                            <label for="elem6">1 bottle of Sake  <span>for my friends</span></label>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="button">
+                    <button type="button">Bon appetit :)</button>
             </div>
         </div>
     </body>
