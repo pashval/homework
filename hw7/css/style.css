@@ -89,7 +89,7 @@ input[type='checkbox'] {
 }
 
 .list-option_elem:active {
-    background-color: orange;
+    background-color: #e68a00;
 }
 
 input[type=checkbox]:checked + label {
@@ -132,7 +132,7 @@ button {
 }
 
 button:active {
-    background-color: #ffe0b3;
+    background-color: #625E77;
     font-size: 25px;
-    color: black;
+    font-weight: bold;
 }
