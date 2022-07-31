@@ -1,0 +1,139 @@
+*{transition: all .1s ease-in;}
+
+html {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.list__body {
+    margin-top: 45px;
+    width: 793px;
+    height: 507px;
+    background: #3B3F45;
+}
+
+.head {
+    background: #4A4F56;
+    font-family: 'Roboto';
+    color: #FF8984;
+    text-align: center;
+    height: 82px;
+}
+
+.h1 {
+    padding-top: 12px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+p {
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+.list-option {
+    width: 102px;
+    height: 130px;
+}
+
+.list-option_opt{
+    margin: 20px 130px 45px 130px;
+        
+}
+
+label {
+    margin-left: 16px;
+}
+
+input {
+    margin-left: 12px;
+    width: 19px;
+    height: 19px;
+}
+
+input[type='checkbox'] {
+    accent-color: white;
+}
+
+.list-option_elem label  {
+    width: 534px;
+    height: 45px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.list-option_elem  {
+    width: 534px;
+    height: 45px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.list-option_elem:nth-child(odd) {
+    background-color: #88839E;
+}
+
+.list-option_elem:nth-child(even) {
+    background-color: #7A7593;
+}
+
+.list-option_elem:hover {
+    background-color: #625E77;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.list-option_elem:active {
+    background-color: #e68a00;
+}
+
+input[type=checkbox]:checked + label {
+    text-decoration:line-through;
+    color: #9B96AC;
+}
+
+span {
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+span::before {
+    content: "(";
+}
+
+span::after {
+    content: ")";
+}
+
+button {
+    width: 534px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 170px auto 45px auto;
+    fill: solid;
+    background: #4A4F56;
+    border: none;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF8984;
+}
+
+button:active {
+    background-color: #625E77;
+    font-size: 25px;
+    font-weight: bold;
+}
