@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Gilroy-Medium';
+}
+
+.page__cent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(/hw15/fonts/Gilroy-Bold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(/hw15/fonts/Gilroy-Medium.woff2) format("woff2");
+}
+
+.header__nav-but, .title__name, .link__lang, .titl, .footer__send, .skills__icon-name  {
+    font-family: 'Gilroy-Bold';
+ }
+
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav nav ul {
+    width: 970px;
+    height: 88px;
+    border-bottom: 1px solid #828282;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.header__nav-but {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.header__nav-but li a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.header__nav-but li a:hover {
+    color: #070707;
+}
+
+/* Page */
+
+/* Page_main */
+
+.page__main {
+    padding-top: 70px;
+}
+
+.main__title {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding: 40px 0 50px;
+}
+
+.title__name {
+    font-size: 47.3392px;
+    line-height: 59px;
+}
+
+.title__job {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.title__lang {
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+    left: 30px;
+    top: -50px;
+    transform: rotate(-90deg);
+}
+
+.link__lang {
+    color: #828282;
+    text-decoration: none; 
+    font-size: 16px;
+    line-height: 20px; 
+}
+
+.link__lang:hover {
+    color: #000000;
+}
+
+.vl {
+    width: 3px;
+    height: 17px;
+    background-color: #070707;
+    margin: 0 5px;
+}
+
+.page__about-me {
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 506px;
+}
+
+.main__img {
+    padding-bottom: 105px;
+    display: block;
+}
+
+.main__img-mob {
+    display: none;
+}
+
+  /* About Me */
+
+.about-me__title {
+    margin: 120px 0 30px;
+}
+
+.last__about-me {
+    padding-bottom: 107px;
+}
+
+.titl {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.about-me__text, .skills__text, .footer__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    color: #070707;
+    width: 500px;
+}
+
+  /* Skills */
+
+.skills__title {
+    padding: 90px 0 70px;
+}
+
+.skills__text {
+    padding-bottom: 80px;
+}
+
+.skills__programs {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+    width: 900px;
+}
+
+.skills__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__icon-name {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    padding: 25px 0 40px;
+}
+
+.name__figma {
+    padding-bottom: 57px;
+}
+
+.skills__icon-stars img {
+    padding-left: 9px;
+}
+
+.skills__icon-stars img:first-child {
+    padding-left: 0;
+}
+
+/* Portfolio */
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+.page__portfolio {
+    background-color: #F6F6F6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio__title {
+    padding: 112px 0 50px;
+}
+
+.portfolio__link {
+    padding: 45px 0 100px;
+    text-align: center;
+}
+.portfolio__link a {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #070707;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__title {
+    padding: 115px 0 20px;
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+}
+
+.footer__subtitle {
+    padding-bottom: 35px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+.footer__button {
+   padding-bottom: 85px;
+}
+
+
+.footer__send {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 100px;
+    width: 180px;
+    height: 42px;
+    cursor: pointer; 
+
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footer__text {
+    text-align: center;
+    padding: 45px 0 123px;
+    color: #828282;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    .header {
+        display: none;
+    }
+    .title__job {
+        padding: 35px 0;
+    }
+    .page__about-me {
+        padding: 0 20px;
+    }
+
+    .main__title {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding: 0;
+        margin: 0;
+    }
+    .title__lang {
+        display: none;
+    }
+    .page__portfolio {
+        width: 100%;
+
+    }
+    .main__img {
+        display: none;
+    }
+    .main__img-mob {
+        display: block;
+        padding-bottom: 83px;
+    }
+    .skills__programs {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .titl {
+        padding-top: 81px;
+        margin-top: 0;
+    }
+
+    .about-me__text {
+        width:100%;
+    }
+    .skills__title {
+        padding: 83px 0 50px;
+    }
+    .skills__text {
+        padding-bottom: 70px;
+    }
+    .skills__icon-stars {
+        padding-bottom: 80px;
+    }
+    .stars_last {
+        padding-bottom: 100px;
+    }
+    .portfolio__title {
+        padding-bottom: 70px;
+    }
+    .portfolio__screen {
+        padding: 0 30px;
+    }
+    .portfolio__link {
+        padding: 33px 0 778x;
+    }
+    .footer__title {
+        padding: 82px 0 30px;
+    }
+    .footer__subtitle {
+        padding-bottom: 40px;
+    }
+    .footer__button {
+        padding-bottom: 48px;
+    }
+    .footer__icons {
+        width: 315px;
+    }
+    .footer__send {
+        width: 316px;
+    }
+  }
