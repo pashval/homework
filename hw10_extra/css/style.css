@@ -100,7 +100,6 @@ html {
     left: 30px;
     top: -50px;
     transform: rotate(-90deg);
-    z-index: -1;
 }
 
 .link__lang {
