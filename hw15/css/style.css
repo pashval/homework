@@ -18,12 +18,12 @@ html {
 
 @font-face {
     font-family: 'Gilroy-Bold';
-    src: url(/hw15/fonts/Gilroy-Bold.woff2) format("woff2");
+    src: url(../fonts/Gilroy-Bold.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'Gilroy-Medium';
-    src: url(/hw15/fonts/Gilroy-Medium.woff2) format("woff2");
+    src: url(../fonts/Gilroy-Medium.woff2) format("woff2");
 }
 
 .header__nav-but, .title__name, .link__lang, .titl, .footer__send, .skills__icon-name  {
