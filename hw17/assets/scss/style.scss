@@ -1,0 +1,39 @@
+@use "header";
+@use "main";
+@use "footer";
+
+* {
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+
+$font-path: "../../assets/fonts";
+
+@font-face {
+    src: url("#{$font-path}/RedHatDisplay-SemiBold.woff2") format("woff2");
+    font-family: "RHD-SemiBold";
+}
+
+@font-face {
+    src: url("#{$font-path}/RedHatDisplay-Regular.woff2") format("woff2");
+    font-family: "RHD-Regular";
+}
+
+@font-face {
+    src: url("#{$font-path}/Lato-Regular.woff2") format("woff2");
+    font-family: "Lato";
+}
+
+.container, .footer__size {
+    max-width: 100%;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    
+}
