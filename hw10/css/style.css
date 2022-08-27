@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url(/hw10/fonts/PTSans-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url(/hw10/fonts/Tourney-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url(/hw10/fonts/Staatliches-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'Francois One';
+    src: url(/hw10/fonts/FrancoisOne-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'Farro';
+    src: url(/hw10/fonts/Farro-Light.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url(/hw10/fonts/PTSans-Bold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'PT Sans Italic';
+    src: url(/hw10/fonts/PTSans-Italic.woff2) format("woff2");
+}
+
+/* HEADER */
+
+.header {
+    width: 1200px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.header__size {
+    margin-top: 13px;
+}
+
+.lang {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+
+}
+
+nav .navig {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    width: 261px;
+    justify-content: space-between;
+    margin-left: 55px;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    mix-blend-mode: normal;
+    margin-right: 600px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo img {
+    float: right;
+}
+
+/* BODY */
+
+.main__size {
+    margin-top: 80px;
+}
+
+.main__title {
+    font-family: 'Francois One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+.main__title span {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    vertical-align: text-top;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.main__text {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.italic {
+    font-family: 'PT Sans Italic';
+}
+
+.bold {
+    font-family: 'PT Sans Bold';
+}
+
+.main__parag {
+    margin-bottom: 40px;
+}
+
+.gray {
+    background-color: lightgray;
+}
+
+div a, p a {
+    color: black;
+}
