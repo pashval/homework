@@ -1,10 +1,8 @@
 * {
     box-sizing: border-box;
-}
-
-* { 
     transition: all .1s ease-in;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -19,37 +17,37 @@ main {
 
 @font-face {
     font-family: 'PT Sans';
-    src: url(/hw11/fonts/PTSans-Regular.woff2) format("woff2");
+    src: url(../fonts/PTSans-Regular.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'Tourney';
-    src: url(/hw11/fonts/Tourney-SemiBold.woff2) format("woff2");
+    src: url(../fonts/Tourney-SemiBold.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'Staatliches';
-    src: url(/hw11/fonts/Staatliches-Regular.woff2) format("woff2");
+    src: url(../fonts/Staatliches-Regular.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'Francois One';
-    src: url(/hw11/fonts/FrancoisOne-Regular.woff2) format("woff2");
+    src: url(../fonts/FrancoisOne-Regular.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'Farro';
-    src: url(/hw11/fonts/Farro-Light.woff2) format("woff2");
+    src: url(../fonts/Farro-Light.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'PT Sans Bold';
-    src: url(/hw11/fonts/PTSans-Bold.woff2) format("woff2");
+    src: url(../fonts/PTSans-Bold.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'PT Sans Italic';
-    src: url(/hw11/fonts/PTSans-Italic.woff2) format("woff2");
+    src: url(../fonts/PTSans-Italic.woff2) format("woff2");
 }
 
 /* HEADER */
@@ -162,7 +160,7 @@ li a {
 }
 
 .backgr {
-    background-image: url(/hw11/img/bg-picture.svg);
+    background-image: url(../img/bg-picture.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 1150px 100px;
