@@ -405,11 +405,21 @@ i {
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .still__title, .cities__title, .port__title {
     font-size: 30px;
+    padding-top: 70px;
   }
-  .cities__img, .still__img, .port__img {
+  .port {
+    padding-bottom: 40px;
+  }
+  .cities__img, .still__img {
+    grid-template-areas: "img-1" "img-2" "img-3" "img-4" "img-5" "img-6";
+  }
+  .cities__img .sec, .still__img .sec {
+    font-size: 15px;
+  }
+  .port__img {
     grid-template-areas: "img-1" "img-2" "img-3" "img-4" "img-5" "img-6" "img-7" "img-8" "img-9" "img-10";
   }
-  .cities__img .sec, .still__img .sec, .port__img .sec {
+  .port__img .sec {
     font-size: 15px;
   }
 }
