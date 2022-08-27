@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-    transition: all .0.5s ease-in;
+    transition: all .0.8s ease-in;
 }
 
 /* Fonts */
 
-$font-path: "/hw12/assets/fonts";
+$font-path: "../../assets/fonts";
 
 @font-face {
     src: url("#{$font-path}/NunitoSans-SemiBold.woff2") format("woff2");
