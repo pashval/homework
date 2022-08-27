@@ -10,38 +10,38 @@ main {
 /* FONTS */
 
 @font-face {
-    font-family: 'PT Sans';
-    src: url(/hw10/fonts/PTSans-Regular.woff2) format("woff2");
+    font-family: 'PT Sans'; 
+    src: url(../fonts/PTSans-Regular.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'Tourney';
-    src: url(/hw10/fonts/Tourney-SemiBold.woff2) format("woff2");
+    src: url(../fonts/Tourney-SemiBold.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'Staatliches';
-    src: url(/hw10/fonts/Staatliches-Regular.woff2) format("woff2");
+    src: url(../fonts/Staatliches-Regular.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'Francois One';
-    src: url(/hw10/fonts/FrancoisOne-Regular.woff2) format("woff2");
+    src: url(../fonts/FrancoisOne-Regular.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'Farro';
-    src: url(/hw10/fonts/Farro-Light.woff2) format("woff2");
+    src: url(../fonts/Farro-Light.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'PT Sans Bold';
-    src: url(/hw10/fonts/PTSans-Bold.woff2) format("woff2");
+    src: url(../fonts/PTSans-Bold.woff2) format("woff2");
 }
 
 @font-face {
     font-family: 'PT Sans Italic';
-    src: url(/hw10/fonts/PTSans-Italic.woff2) format("woff2");
+    src: url(../fonts/PTSans-Italic.woff2) format("woff2");
 }
 
 /* HEADER */
