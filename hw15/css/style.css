@@ -78,7 +78,9 @@ html {
 /* Page_main */
 
 .page__main {
-    padding-top: 70px;
+    padding: 70px 15px 0;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .main__title {
@@ -135,9 +137,15 @@ html {
     padding-bottom: 105px;
     display: block;
 }
+.main__img img {
+    max-width: 990px;
+    width: 100%;
+}
+
 
 .main__img-mob {
     display: none;
+    width: 100%;
 }
 
   /* About Me */
@@ -163,7 +171,8 @@ html {
     margin: 0 auto;
     padding-bottom: 50px;
     color: #070707;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
   /* Skills */
@@ -180,7 +189,9 @@ html {
     display: flex;
     justify-content: space-between;
     padding-bottom: 110px;
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
+    gap: 45px;
 }
 
 .skills__icon {
@@ -292,7 +303,7 @@ html {
     color: #828282;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .header {
         display: none;
     }
@@ -315,7 +326,6 @@ html {
     }
     .page__portfolio {
         width: 100%;
-
     }
     .main__img {
         display: none;
@@ -374,4 +384,39 @@ html {
     .footer__send {
         width: 316px;
     }
+    .footer__text {
+        padding-bottom: 25px;
+    }
   }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    .header {
+        display: none;
+    }
+    .page__portfolio {
+        padding: 0 15px;
+    }
+    .footer__text {
+        padding-bottom: 30px;
+    }
+    .skills__programs {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .skills__icon {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .main__title .title__name, .main__title .title__job {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .page__main {
+        text-align: center;
+    }
+}
