@@ -1,0 +1,47 @@
+.header {
+    a { 
+        text-decoration: none;
+        .header__logo {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.5em;
+            color: #000000;
+            padding-top: 38px;
+        }
+        }
+    &__title {
+            font-family: 'RHD-Regular';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: 0.05em;
+            color: #000000;
+            padding: 38px 0 70px;
+    }
+    
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1439px ) {
+    .header {
+        padding: 18px 35px 0;
+        &__title {
+            font-size: 33px;
+            padding: 68px 0 50px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px ) {
+    .header {
+        padding: 18px 10px 0;
+        &__title {
+            font-size: 33px;
+            padding: 5px 0 40px;
+            font-size: 30px;
+        }
+    }
+}
