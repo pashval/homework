@@ -1,0 +1,101 @@
+@mixin title {
+    font-family: 'RHD-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    padding-top: 90px;
+}
+
+@mixin text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #565656;
+    
+}
+
+.main {
+    &-project {
+        &__title {
+            @include title;
+        }
+        &__text {
+            @include text;
+            padding-top: 20px;
+            max-width: 570px;
+            width: 100%;
+        }
+    }
+    &-user {
+        &__title {
+            @include title;
+            padding-bottom: 50px;
+        }
+        &__text {
+            @include text;
+            padding-top: 20px;
+            &-first {
+                padding-bottom: 20px;
+            }
+            &-last {
+                padding-bottom: 90px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1440px ) {
+    .main {
+        padding: 0 33px;
+        &-project {
+            &__text {
+                max-width: 1440px;
+                width: 100%;
+            }
+        }
+        &-user {
+            &__title {
+                padding: 70px 0 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px ) {
+    .main {
+        padding: 0 10px;
+        &-project {
+            &__title {
+                font-size: 26px;
+                padding-top: 70px;
+            }
+            &__text {
+                max-width: 700px;
+                width: 100%;
+                font-size: 16px;
+                letter-spacing: 0.1em;
+
+            }
+        }
+        &-user {
+            &__title {
+                font-size: 26px;
+                padding: 70px 0 40px;
+            }
+            &__text {
+                padding-top: 10px;
+                font-size: 16px;
+                letter-spacing: 0.1em;
+                &-first {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
