@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Bebas_light";
+    src: url(../../assets/fonts/BebasNeue\ Light.ttf);
+}
+
+@font-face {
+    font-family: "Bebas_thin";
+    src: url(../../assets/fonts/BebasNeue\ Thin.ttf);
+}
+
+@font-face {
+    font-family: "Bebas_book";
+    src: url(../../assets/fonts/BebasNeue\ Book.ttf);
+}
+
+@font-face {
+    font-family: "Bebas_regular";
+    src: url(../../assets/fonts/BebasNeue\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto_light";
+    src: url(../../assets/fonts/Roboto-Light.ttf);
+}
+
+.main {
+    background-color: #9789F9;
+    height: 800px;
+    &-cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 70px;
+            gap: 50px;
+        &__slide {
+            background-color: #F5F3F9;
+            max-width: 370px;
+            width: 100%;
+            transition-duration: 1.5s;
+            .pop-up {
+                position: absolute;
+                visibility: hidden;
+                margin: 20px 0 0 320px;
+                opacity: 0;
+                transition: visibility 1.5s, opacity 1s linear;
+                .move {
+                    position: relative;
+                    right:20px;
+                    bottom: 5px;
+                }
+            }
+            .price {
+                padding-top: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                font-family: "Bebas_regular";
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.08em;
+                color: gray;
+                .dollar {
+                    font-family: "Bebas_thin";
+                    display: flex;
+                    flex-direction: row;                    
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #181818;
+                }
+                .number {
+                    font-family: "Bebas_thin";
+                    font-size: 60px;
+                    line-height: 60px;
+                    letter-spacing: 0.08em;
+                    color: #000000;
+                    display: f;
+                }
+            }
+            .ui {
+                font-family: "Bebas_book";
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 0.04em;
+                font-weight: 500;
+                text-align: center;
+                padding: 25px 0 30px;
+            }
+            .div {
+                background-image: url("../../img/bg-image(1).png");
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 57px;
+                img {
+                    padding: 40px 0;
+                }
+                ul {
+                    li {
+                    padding-bottom: 30px;
+                    font-family: "Roboto_light";
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.04em;
+                    }
+                    .last {
+                        padding-bottom: 60px;
+                    }
+                }
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .button {
+                    transition-duration: 1.5s;
+                    width: 200px;
+                    height: 54px;
+                    background: #6FCFFB;
+                    border-radius: 30px;
+                    position: absolute;
+                    top: 670px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    text-decoration: none;
+                    font-family: "Bebas_regular";
+                    font-size: 18px;
+                    letter-spacing: 0.04em;
+                    line-height: 18px;
+                    font-weight: 500;
+
+                }
+            }
+        }
+    }
+}
+
+.main-cards__slide:hover {
+    max-width: 400px;
+    .pop-up {
+        visibility: visible;
+        opacity: 1;
+    }
+    .button {
+        background: #FD8D7B;
+        top: 610px;
+    }
+    .div::after{
+        content: "Order now &  get 15% Discount";
+        font-family: 'Roboto_light';
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        color: #A9A9A9;
+        position: absolute;
+        top: 670px;
+}}
