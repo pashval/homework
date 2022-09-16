@@ -1,0 +1,171 @@
+.features {
+    &-wrapper{
+        padding: 100px 0;
+    }
+    &-header{
+        &__title{
+            font-family: 'Worksans_bold';
+            font-size: 40px;
+            line-height: 130%;
+            color: #212353;
+            text-align: center;
+        }
+        &__subtitle{
+            max-width: 638px;
+            font-family: "Montserrat_medium";
+            font-size: 18px;
+            line-height: 160%;
+            color: #4B5D68;
+            padding: 50px 0 80px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    &-elem-wrap{
+        margin-left: 170px;
+    }
+    &-elements{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        justify-content: center;
+        gap: 50px 200px;
+    }
+    &-elem{
+        display: flex;
+        align-items: center;
+        background-image: url(../img/feat_back_1.png);
+    }
+    &-card{
+        border-radius: 50px;
+        max-width: 400px;
+        width: 100%;
+        height: 400px;
+        position: relative;
+          &__first {
+            background: #F0FAF9;
+            background-image: url(../img/feat_back_1.png);
+            background-repeat: no-repeat;
+            background-position: top 20px right 50px;
+          }
+          &__first::after {
+            content: url(../img/features_1.png);
+            position: absolute;
+            top: 110px; 
+            left: -170px;
+          }
+          &__second {
+            background: #F6F0FD;
+            background-image: url(../img/feat_back_2.png);
+            background-repeat: no-repeat;
+            background-position: bottom 20px right 20px;
+          }
+          &__second::after {
+            content: url(../img/features_2.png);
+            position: absolute;
+            top: 110px; 
+            left: -170px;
+          }
+          &__third {
+            background: #FEF0F8;
+            background-image: url(../img/feat_back_3.png);
+            background-repeat: no-repeat;
+            background-position: top 20px right 20px;
+          }
+          &__third::after {
+            content: url(../img/features_3.png);
+            position: absolute;
+            top: 110px; 
+            left: -170px;
+          }
+          &__fourth {
+            background: #EAF6FC;
+            background-image: url(../img/feat_back_4.png);
+            background-repeat: no-repeat;
+            background-position: top 20px left 15px;
+          }
+          &__fourth::after {
+            content: url(../img/features_4.png);
+            position: absolute;
+            top: 110px; 
+            left: -170px;
+          }
+        &__title{
+            font-family: 'Worksans';
+            font-size: 24px;
+            line-height: 130%;
+            color: #212353;
+            margin: 62px 0 0 100px;
+        }
+        &__text{
+            margin: 0 70px 0 100px;
+            font-family: 'Montserrat_reg';
+            font-size: 16px;
+            line-height: 160%;
+            color: #4B5D68;
+            padding: 20px 0 40px;
+        }
+        &__link{
+            margin-left: 100px;
+            position: absolute;
+            bottom: 62px;
+            font-size: 16px;
+            line-height: 160%;
+            font-family: "Montserrat_bold";
+            a {
+                color: #212353;
+                text-decoration: none;
+            }
+            a:hover {
+                cursor: url(../img/cursor.png), auto;
+            } 
+        }
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+    .features-wrapper {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .features-header__subtitle {
+        padding: 40px 10px 190px 10px;
+    }
+    .features-elements {
+        grid-template-columns: 300px;
+        gap: 170px;
+    }
+    .features-elem-wrap {
+        margin-left: 0;
+    }
+    .features-card {
+        height: 340px;
+    }
+    .features-card__link {
+        bottom: 30px;
+    }
+    .features-card__first:after, .features-card__second:after,
+    .features-card__third:after, .features-card__fourth:after {
+        top: -150px; 
+        left: 30px;
+    }
+    .features-card__title{
+        margin: 50px 0 0;
+        text-align: center;
+    }
+    .features-card__text{
+        margin: 20px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1275px) {
+    .features-elements {
+        grid-template-columns: 400px;
+    }
+    .features-header__subtitle {
+        padding: 30px;
+    }
+}
+
+@media only screen and (width: 768px) {
+.features-elem-wrap{padding-top: 150px;}
+}

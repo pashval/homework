@@ -1,0 +1,41 @@
+  @font-face {
+    font-family: "Montserrat_bold";
+    src: url(../fonts/Montserrat-Bold.woff2);
+  }
+  
+  @font-face {
+    font-family: 'Montserrat_light';
+    src: url(../fonts/Montserrat-Light.woff2);
+  }
+  
+  @font-face {
+    font-family: "Montserrat_medium";
+    src: url(../fonts/Montserrat-Medium.woff2);
+  }
+  
+  @font-face {
+    font-family: 'Montserrat_reg';
+    src: url(../fonts/Montserrat-Regular.woff2);
+  }
+  
+  @font-face {
+    font-family: 'Montserrat_semibold';
+    src: url(../fonts/Montserrat-Semibold.woff2);
+  }
+  
+  @font-face {
+    font-family: 'Worksans_bold';
+    src: url(../fonts/WorkSans-Bold.woff2);
+  }
+  
+  @font-face {
+    font-family: 'Worksans';
+    src: url(../fonts/WorkSans-Regular.woff2);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    transition: all 0.5s ease 0s;
+  }
+
+@import 'button', 'header', 'data', 'level', 'test', 'features', 'footer';
