@@ -1,0 +1,115 @@
+.projects {
+    &__blue {
+        background-color: #55B7FF;
+        width: 585px;
+        height: 470px;
+        position: absolute;
+        top: 1000px;
+        z-index: -1;
+    } 
+    &__purple {
+        background-color: #7E5AFF;
+        width: 585px;
+        height: 470px;
+        position: absolute;
+        right: 0;
+        top: 1620px;
+        z-index: -1;
+    } 
+	&-wrap {
+        max-width: 1170px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    &__titl {
+        div {
+            border: 1px solid #2C4058;
+            width: 100px;
+            height: 0px;
+            margin: 100px auto 0;
+        }
+        p {
+            margin-top: 30px;
+        }
+        font-family: 'Montserrat_Bold';
+        font-size: 44px;
+        line-height: 54px;
+        text-align: center;
+        color: #2C4058;
+        
+    }
+	&-trade {
+        display: flex;
+        flex-direction: row;
+        margin-top: 150px;
+        &-block {
+            margin: 90px 0 0 70px;
+        }
+        &-block2 {
+            margin: 90px 64px 0 0;
+        }
+    }
+	&__title { 
+        font-family: 'Montserrat_Regular';
+        font-size: 22px;
+        line-height: 27px;
+        color: #2C4058;
+        margin-bottom: 0;
+    }
+    &__subtitle { 
+        font-family: 'Montserrat_Bold';
+        font-size: 44px;
+        line-height: 54px;
+        color: #2C4058;
+        margin: 0 0 19px;
+    }
+    &__text { 
+        font-family: 'OpenSans_Regular';
+        font-size: 18px;
+        line-height: 30px;
+        color: #2C4058;
+    }
+	&__button { 
+        font-family: 'Montserrat_Regular';
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        text-decoration: none;
+        display: block;
+        width: 190px;
+        transition: 0.5s ease-out;
+        p {
+            border: 1px solid #2C4058;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 22px 0 45px;
+            transition: 1s ease-out;
+        }
+    }
+    &__button:hover  { 
+        color: #fff;
+        p{
+            background-color: #2C4058;
+        }
+    }
+    &__address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        p {
+            font-family: "OpenSans_Italic";
+            font-size: 15px;
+            line-height: 20px;
+            color: #000000;
+            padding-left: 10px;
+        }
+        i {
+            font-size: 15px;
+            line-height: 17px;
+            letter-spacing: 0.3em;
+            color: #2C4058;
+        }
+    }
+}
