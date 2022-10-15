@@ -64,7 +64,7 @@ function checkEmail() {
 // map
 marker.setMap(map);
   function myMap() {
-    var myLatlng = new google.maps.LatLng(48.9268650485054, 24.71766850432162);
+    var myLatlng = new google.maps.LatLng(40.7547282924173, -73.97693441823259);
     var mapProp= {
       center:myLatlng,
       zoom:10,
