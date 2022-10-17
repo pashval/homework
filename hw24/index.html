@@ -10,13 +10,22 @@
 <body>
     <main>
         <div class="container">
-            <div class="search-container">
-                <input type="text" placeholder="enter a movie" id="movie-name" value="" />
+                <form action="" class="">
+                    <div class="search-container">
+                        <input type="text" placeholder="enter a movie" id="movie-name" name="movie-name" />
+                    </div>
+                    <input type="radio" class="choise" id="movie" name="choise" value="movie">
+                    <label for="movie">movie</label><br>
+                    <input type="radio" class="choise" id="series" name="choise" value="series">
+                    <label for="series">series</label><br>
+                    <input type="radio" class="choise" id="episode" name="choise" value="episode">
+                    <label for="episode">episode</label>
+                </form>
                 <button id="search-btn"></button>
-            </div>
-            <div id="result"></div>
+
         </div>
     </main>
+    <script src="libraries/jquery.min.js"></script>
     <script src="src/js/script.min.js"></script>
 </body>
 </html>
