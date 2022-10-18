@@ -11,6 +11,7 @@ $(document).ready(function() {
                 s: movieName,
                 i: '',
                 apikey: apiKey,
+                p: '4',
                 type: choise
             },
             success: function (data, status, xhr) {
