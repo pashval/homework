@@ -1,0 +1,171 @@
+@use "architec";
+@use "still";
+@use "port";
+
+* {transition: all .5s ease-in-out;}
+
+* {
+    box-sizing: border-box;
+  }
+
+@mixin title {
+    padding: 120px 0 80px;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: "Delius";
+}
+
+$font-path: "../../assets/fonts";
+
+@font-face {
+    src: url("#{$font-path}/DeliusUnicase-Regular.woff2") format("woff2");
+    font-family: "Delius";
+}
+
+@font-face {
+    src: url("#{$font-path}/Roboto-Medium.woff2") format("woff2");
+    font-family: "Roboto-Medium";
+}
+
+@font-face {
+    src: url("#{$font-path}/Roboto-Regular.woff2") format("woff2");
+    font-family: "Roboto-Regular";
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
+}
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.still__title, .cities__title, .port__title {
+    @include title;
+}
+
+.fir {
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.sec {
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #E0E0E0;
+}
+
+.button {
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    background: #E0E0E0;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    color: #4F4F4F;
+}
+
+.button:hover {
+    cursor: url(../../img/cursor.png), pointer;
+}
+
+.box {
+    margin: 0 auto;
+    background-color: rgb(77, 179, 123);
+    width: 500px;
+    padding: 50px;
+    .link {
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.img-1 {grid-area: img-1;}
+.img-2 {grid-area: img-2;}
+.img-3 {grid-area: img-3;}
+.img-4 {grid-area: img-4;}
+.img-5 {grid-area: img-5;}
+.img-6 {grid-area: img-6;}
+.img-7 {grid-area: img-7;}
+.img-8 {grid-area: img-8;}
+.img-9 {grid-area: img-9;}
+.img-10 {grid-area: img-10;}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px ) {
+    .still__title, .cities__title, .port__title {
+        font-size: 30px;
+        padding-top: 70px ;
+    }
+    .port {
+        padding-bottom: 40px;
+    }
+    .cities__img, .still__img {
+        .sec {
+            font-size: 15px;
+        }
+        grid-template-areas:
+        "img-1"
+        "img-2"
+        "img-3"
+        "img-4"
+        "img-5"
+        "img-6";
+    }
+    .port__img {
+        .sec {
+            font-size: 15px;
+        }
+        grid-template-areas:
+        "img-1"
+        "img-2"
+        "img-3"
+        "img-4"
+        "img-5"
+        "img-6"
+        "img-7"
+        "img-8"
+        "img-9"
+        "img-10";
+    }
+    
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px ) {
+    .cities__img, .still__img, .port__img {
+        grid-template-areas:
+        "img-1 img-2"
+        "img-3 img-4"
+        "img-5 img-6"
+        "img-7 img-8"
+        "img-9 img-10";
+    }
+    
+}
