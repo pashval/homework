@@ -1,0 +1,119 @@
+.test {
+    display: flex;
+        justify-content: center;
+    &-wrapper {
+        max-width: 1170px;
+        width: 100%;
+        background: #CCDDFF;
+        border-radius: 50px;
+        background-image: url(../img/testi_back_left.png);
+        background-repeat: no-repeat;
+    }
+    &-name {
+        background-image: url(../img/testi_back_right.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        .title {
+            font-family: 'Worksans_bold';
+            font-size: 40px;
+            line-height: 130%;
+            color: #4B5D68;
+            padding: 80px 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    &-review {
+        display: flex;
+        justify-content: center;
+        &__card {
+            display: flex;
+            max-width: 465px;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #9C69E2;
+            box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+            border-radius: 50px;
+            margin-bottom: 70px;
+            &__gap {
+                margin-right: 100px;
+            }
+        }
+        &__img {
+            img {
+                width: 90px;
+                border-radius: 45px;
+                margin: 50px 15px 0 30px;
+            }
+        }
+        &__desc {
+            padding: 50px 30px 50px 0;
+        }
+        &__title {
+            font-family: "Montserrat_medium";
+            color: #212353;
+            font-size: 16px;
+            line-height: 160%;
+            margin: 0 0 2px;
+        }
+        &__link {
+            font-family: "Montserrat_medium";
+            color: #9C69E2;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 160%;
+        }
+        &__link:hover {
+            cursor: url(../img/cursor.png), auto;
+        } 
+        &__text {
+            font-family: 'Montserrat_reg';
+            color: #4B5D68;
+            font-size: 16px;
+            line-height: 160%;
+            margin: 19px 0 0;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 789px) and (max-device-width: 1200px) {
+    .test-wrapper {
+        margin: 20px;
+    }
+    .test-review__card__gap {
+        margin-right: 50px;
+    }
+    .test-review__card {
+        margin: 20px;
+        max-width: 380px;
+    }
+    .test-name .title {
+        padding: 35px 0;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 788px) {
+    .test-wrapper {
+        margin: 20px;
+        background-size: 300px;
+    }
+    .test-name {
+        background-size: 300px;
+    }
+    .test-name .title {
+        padding: 35px 0;
+    }
+    .test-review {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .test-review__card__gap {
+        margin: 0;
+    }
+    .test-review__card {
+        margin-bottom: 40px;
+    }
+}
