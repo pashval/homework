@@ -1,0 +1,84 @@
+.level {
+    scroll-margin-top: 10px;
+    &-wrapper {
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #FDE8F5;
+        border-radius: 50px;
+    }
+    &-right {
+        padding: 0 70px 0 130px;
+        &__title {
+            font-family: 'Worksans_bold';
+            font-size: 40px;
+            line-height: 130%;
+            color: #212353;
+        }
+        &__text {
+            font-family: "Montserrat_medium";
+            font-size: 18px;
+            line-height: 29px;
+            color: #4B5D68;
+        }
+    }
+    &__img { 
+        padding: 75px 0 75px 20px;
+        margin: 0;
+        img {
+            width: 450px;
+        }
+
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+    .level {
+        margin: 200px 20px 0 20px;
+    }
+    .level-wrapper {
+        position: relative;
+    }
+    .level__img {
+        position: absolute;
+        top: -230px;
+        left: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .level-right {
+        padding: 20px;
+    }
+    .level__img img {
+        width: 280px;
+    }
+    .level {
+        scroll-margin-top: 200px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .level {
+        margin: 50px 20px 20px 20px;
+    }
+    .level__img {
+        padding: 20px;
+    }
+    .level-right {
+        padding: 20px;
+    }
+    .level__img img {
+        width: 350px;
+    }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1250px) {
+    .level {
+        margin: 20px;
+    }
+    .level-right {
+        padding-left: 50px;
+    }
+}
